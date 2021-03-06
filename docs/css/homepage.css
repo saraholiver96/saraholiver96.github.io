@@ -1,26 +1,67 @@
+
+
 body {
-font-family: garamond,serif;
-background-color: rgb(36, 36, 36);
+  font-family: georgia,serif;
+  background-color: rgba(186, 146, 25, 0.23);
 }
 
-.everything {
-/* border: solid rgb(86, 59, 255) ; */
-width: 80%;
-margin-top: 250px;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div.everything {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  background-color: white;
+  border: 1px solid white;
+  padding-top: 150px;
+  max-width: 700px;
+
+}
+
+
+p.playbutton {
+text-align: center;
+background-color: rgba(95, 154, 9, 0.63);
+border: 1px solid white;
+border-radius: 20px;
+width: 6em;
 margin-left: auto;
 margin-right: auto;
-max-width: 1000px;
+margin-bottom: 2em;
+margin-top: 0;
+padding: 1em;
+font-family: garamond, serif;
+font-weight: bold;
+font-size: 1.5em;
 color: white;
+
+}
+
+p.playbutton:hover {
+  background-color: rgba(114, 153, 4, 1);
+  color: rgb(242, 193, 46);
+}
+
+
+a {
+text-decoration: none;
 }
 
 img{
   width: 100%;
+ border: 5px groove rgb(189, 153, 2);
+
 }
 
 .cover {
   float:right;
   width: 48%;
-  border: 5px groove rgb(189, 153, 2);
+  margin: 1.8em;
+ padding:0;
+
 }
 
 .intro {
@@ -28,7 +69,8 @@ img{
 }
 
 .headingbar {
-background-color: rgba(36, 36, 36, 0.90);
+  background: rgb(157,73,55);
+  background: linear-gradient(180deg, rgba(157,73,55,1) 62%, rgba(169,84,38,1) 83%, rgba(196,108,0,1) 100%);
 padding: 5px;
 margin-top: 0;
   /* text-align:center; */
@@ -46,7 +88,7 @@ h2 {
 font-family: garamond, serif;
 font-variant: small-caps;
 font-weight:bold;
-color:rgb(138, 0, 0);
+color:rgb(209, 158, 4);
 font-size: 6em;
 margin-top: 0;
 margin-bottom: 0px;
@@ -67,22 +109,22 @@ color: white;
   font-family: times;
   font-size: 1.5em;
   font-style: oblique;
-  text-indent: 250px;
+  margin-left: 250px;
   text-shadow: 2px -2px #000000;
+  padding-right: 1em;
 
 }
 
 .performed {
 
-font-size: 1.5em;
+font-size: 1.2em;
 font-family: garamond,serif;
 border: 1.5px dotted rgb(189, 153, 2);
 max-width: 500px;
-text-align: justified;
-margin-top: 50px;
-margin-left: auto;
-margin-right: auto;
-list-style: square inside;
+text-align: center;
+margin: 1em;
+list-style: none;
+font-weight: 900;
 }
 
 p{
@@ -92,37 +134,60 @@ font-family: garamond,serif;
 /* color: black; */
 font-size: 1.2em;
 line-height: 1.2;
-text-align:justify;
-margin-top: 50px;
-
+margin: 1em;
+text-align: justify;
 
 }
 
 .first {
-  background-color: rgb(138, 0, 0);
+  background-color: rgb(157,73,55);
   color: white;
   font-size: 1.2em;
-  font-weight: bolder;
+  font-weight: 400;
   width: 80%;
-  margin-left:auto;
-  margin-right: auto;
+margin: 1em;
   padding: 10px;
 }
 
 
 
-@media screen and (max-width:950px){
+@media screen and (max-width:700px){
+
+
+div.everything{
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
   .cover{
     float: none;
-    width: 70%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
+    display:flex;
+    align-items: center;
   }
   .intro{
-    width: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
+  p.first {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+@media screen and (max-width:450px) {
+
+div.everything {
+padding-top: 300px;
+width: 100%;
+}
 }
